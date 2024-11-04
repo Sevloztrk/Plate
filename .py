@@ -11,7 +11,7 @@ st.write("\n")
 
 
 # Plaka kodları ve şehir isimleri
-plate_codes = {
+plate_code = {
     1: "Adana",
     2: "Adıyaman",
     3: "Afyonkarahisar",
@@ -99,7 +99,7 @@ plate_codes = {
 plate_code = st.number_input("Enter the license plate code:", min_value=1, max_value=81, step=1)
 
 # Plaka koduna göre şehir adını gösterin
-if plate_code in plate_codes:
+if plate_code in plate_code:
     st.write(f"The city for license plate {plate_code} is: {plate_code[plate_code]}")
 else:
     st.write("Invalid license plate code.")
