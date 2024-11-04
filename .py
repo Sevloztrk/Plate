@@ -5,6 +5,7 @@ st.markdown("## The License Plates in the Cities of Turkey")
 st.write("This demo simulates showing the license plate codes of cities in Turkey.")
 st.write("\n")
 
+
 # Plaka kodları ve şehir isimleri
 plate_codes = {
     1: "Adana",
