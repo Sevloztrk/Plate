@@ -100,7 +100,7 @@ plate_code = st.number_input("Enter the license plate code:", min_value=1, max_v
 
 # Plaka koduna göre şehir adını gösterin
 if plate_code in plate_codes:
-    st.write(f"The city for license plate {plate_code} is: {plate_codes[plate_code]}")
+    st.write(f"The city for license plate {plate_code} is: {plate_code[plate_code]}")
 else:
     st.write("Invalid license plate code.")
 
