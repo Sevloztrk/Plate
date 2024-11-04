@@ -1,12 +1,12 @@
 import streamlit as st
 
-st.set_page_config(page_title"The license Plates in the Cities of Turkey ", layout="wide")
+st.set_page_config(page_title="The license Plates in the Cities of Turkey ", layout="wide")
 st.markdown("## The license Plates in the Cities of Turkey")
-st.wrrite(" this demo simulates show us The license Plate in the Cities of Turkey.")
+st.write(" this demo simulates show us The license Plate in the Cities of Turkey.")
 st.write("\n")
 st.write("\n")
 
-plaka_kodlari = {
+Plaltes Code = {
     1: "Adana",
     2: "Adıyaman",
     3: "Afyonkarahisar",
@@ -89,13 +89,11 @@ plaka_kodlari = {
     80: "Osmaniye",
     81: "Düzce"
 }
+# Plate code entry from the user
+plate codes = st.number_input("Enter the licance plates code:",min_value=1, max_value=81, step=1)
 
-plaka_kodu = int(input("Plaka kodunu girin: "))
-
-
-if plaka_kodu in iller_ve_plakalar:
-    print(f"{plaka_kodu} plakası: {iller_ve_plakalar[plaka_kodu]}")
+# Show city name by plate code
+if plaka_kodu in plates codes:
+    st.write(f"The city for license plate {Plate_code} is: {Plate_code[Plate_code]}")
 else:
-    print("Geçersiz plaka kodu.")
-
-
+    st.write("Invalid license plate code.")
