@@ -1,7 +1,4 @@
 import streamlit as st
-import altair as alt
-import numpy as np
-import pandas as pd
 
 
 st.set_page_config(page_title="The License Plates in the Cities of Turkey", layout="wide")
